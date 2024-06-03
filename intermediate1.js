@@ -29,9 +29,33 @@ function isLeap(year) {
         } else if (year % 4 === 0) {
         return "Leap year.";
         } else {
-        return "Not leap year.";
+            return "Not leap year.";
         }
 }    
    
-   
-            
+/*fizzbuzz*/
+var arr=[];
+var count = 1
+function fizzbuzz(){
+if(count % 5===0 && count % 3===0 ){
+    arr.push("fizzbuzz")
+}
+else if(count % 5===0){
+    arr.push("buzz")
+}
+else if(count % 3===0){
+    arr.push("fizz")
+}
+else{
+    arr.push(count)
+}
+count++
+return arr
+}
+        
+/*Random payment*/
+function whosPaying(names) {
+var random= Math.floor(Math.random()*names.length);
+return (names[random]+" is going to buy lunch today!");
+
+}
