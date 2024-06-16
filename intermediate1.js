@@ -59,3 +59,41 @@ var random= Math.floor(Math.random()*names.length);
 return (names[random]+" is going to buy lunch today!");
 
 }
+
+// while loop
+var i =1;
+while(i<10){
+console.log("hi "+i);
+i++;
+}
+
+
+var i=99;
+while(i>=0){
+console.log("there are " + i + "bottles i took one " );
+i--;
+console.log("now " + i + "bottles are there" );
+}
+
+// for loop
+
+function fibonacciGenerator (n) {
+if(n==1){
+    return [0];
+}
+else if (n==2){
+    return [0,1];
+}
+else{
+    var arr=[0,1];
+    for(var i=0;i<n-2;i++){
+        var l=arr.length;
+        var temp = arr[l-2] + arr[l-1];
+        arr.push(temp);
+        
+        
+    }
+return arr;
+}
+
+}
